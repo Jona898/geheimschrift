@@ -12,3 +12,6 @@ export default defineComponent({
   components: {},
 });
 </script>
+
+<style lang="less" scoped>
+</style>

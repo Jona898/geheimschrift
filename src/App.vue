@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/GenerateEncoding">GenerateEncoding</router-link>
+      <router-link to="/EncodeMessage">EncodeMessage</router-link>
     </div>
 
     <p>Some Test Text</p>

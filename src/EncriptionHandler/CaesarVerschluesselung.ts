@@ -18,7 +18,7 @@ function caesarEncriptionGenerator(characterShift: number): Encription {
     encript(this, originalMessage) {
       let encriptedMessage = "";
 
-      for (const origCharacter of originalMessage) {
+      for (const origCharacter of originalMessage.toUpperCase()) {
         const encCharacter = this.code[origCharacter];
         encriptedMessage +=
           encCharacter != undefined ? encCharacter : origCharacter;
@@ -29,7 +29,7 @@ function caesarEncriptionGenerator(characterShift: number): Encription {
     decript(this, encriptedMessage) {
       let originalMessage = "";
 
-      for (const encCharacter of encriptedMessage) {
+      for (const encCharacter of encriptedMessage.toUpperCase()) {
         let origCharacter = undefined;
 
         for (const codeKey in this.code) {
