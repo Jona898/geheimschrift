@@ -1,5 +1,5 @@
 {
-  "name": "geheimschrif",
+  "name": "geheimschrift",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -68,5 +68,24 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "babel": {
+    "presets": [
+      "@vue/cli-plugin-babel/preset"
+    ],
+    "plugins": [
+      [
+        "@babel/proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  }
 }
