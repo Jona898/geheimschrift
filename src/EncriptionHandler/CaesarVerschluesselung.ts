@@ -1,4 +1,4 @@
-import { Encription } from "@/models/code.data";
+import { Encription } from "../models/code.data";
 
 function caesarEncriptionGenerator(characterShift: number): Encription {
   return {

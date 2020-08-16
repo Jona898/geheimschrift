@@ -1,4 +1,4 @@
-import { Encription } from "@/models/code.data";
+import { Encription } from "../models/code.data";
 
 const noEncription: Encription = {
   name: "No Encripting",

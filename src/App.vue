@@ -2,11 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link>
-      <router-link to="/GenerateEncoding">GenerateEncoding</router-link>
       <router-link to="/EncodeMessage">EncodeMessage</router-link>
     </div>
-
-    <p>Some Test Text</p>
 
     <router-view />
   </div>
@@ -18,9 +15,6 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "App",
   components: {},
-  setup() {
-    return {};
-  },
 });
 </script>
 

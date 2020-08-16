@@ -1,7 +1,7 @@
 import { Mutations, MutationTypes } from "./mutations";
 import { ActionContext, ActionTree } from "vuex";
 import { State } from ".";
-import { Encription } from "@/models/code.data";
+import { Encription } from "../models/code.data";
 
 /*
  * For Asynchronus Mutations.

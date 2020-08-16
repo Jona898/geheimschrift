@@ -1,5 +1,5 @@
-import { caesarEncriptionGenerator, noEncription } from "@/EncriptionHandler";
-import { Encription } from "@/models/code.data";
+import { caesarEncriptionGenerator, noEncription } from "../EncriptionHandler";
+import { Encription } from "../models/code.data";
 import {
   CommitOptions,
   createLogger,
@@ -10,12 +10,14 @@ import {
 import { Actions, actions, ActionTypes } from "./actions";
 import { Getters, getters } from "./getters";
 import { Mutations, mutations, MutationTypes } from "./mutations";
+import { EncodingDirection } from "../models/EncodingDirection.data";
 
 //declare state
 type State = {
   inputMessage: string;
   currentEncription: Encription;
   allEncriptions: Encription[];
+  currentDirection: EncodingDirection;
 };
 
 //set state
@@ -29,6 +31,7 @@ const state: State = {
     caesarEncriptionGenerator(3),
     caesarEncriptionGenerator(4),
   ],
+  currentDirection: EncodingDirection.ENCODE,
 };
 
 //setup store type
